@@ -14,7 +14,7 @@ st.set_page_config(page_title="Crypto Dashboard", layout="wide", initial_sidebar
 # --- HEADER (CUSTOM IMAGE REPLACES TEXT HEADER) ---
 try:
     custom_image = Image.open(
-        r"E:\TELKOM UNIVERSITY\VSCode\Crypto_Dashboard\gambar.png"
+        r"gambar.png"
     )
     st.image(custom_image, use_container_width=True)
 except Exception as e:
