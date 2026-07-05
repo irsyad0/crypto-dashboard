@@ -1,0 +1,16 @@
+name: Ping Streamlit App
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Menjalankan skrip setiap 6 jam
+  workflow_dispatch:
+
+jobs:
+  ping_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Ping App URL
+        run: |
+          curl -I "https://streamlit.app"
