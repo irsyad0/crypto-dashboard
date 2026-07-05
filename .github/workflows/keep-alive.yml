@@ -13,4 +13,4 @@ jobs:
 
       - name: Ping App URL
         run: |
-          curl -I "https://streamlit.app"
+          curl -I "https://crypto-dashboard-cc-kel8.streamlit.app"
